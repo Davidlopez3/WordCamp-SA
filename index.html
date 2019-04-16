@@ -84,14 +84,15 @@ margin:#ccc;
 	}
 	
 	.footer-distributed {
-    background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: normal 16px sans-serif;
-    padding: 45px 50px;
-    margin-top: 80px;
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(253,253,253,0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(253,253,253,0.12);
 }
 	
 	footer-right {
@@ -109,17 +110,10 @@ margin:#ccc;
 	</head>
 
 <body>
-	<div id="wrap">
-	<div class="container">
-    <!-- Content here -->
-		
-<div class="jumbotron">
-	<h1 class="display-4">A One-day Conference About WordPress</h1>
-<nav class="navbar navbar-dark bg-primary fixed-top ">
- <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark"
-     data-spy="scroll" data-target=".navbar">
-  
+	
+    <!-- Content here --> 
+  <nav>
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -135,28 +129,33 @@ margin:#ccc;
           <a class="nav-link" href="#schedule">Schedule</a>
         </li>
 		</ul>
-		  </div>
-  
+		<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span ></span> Presented by NVC </a></li>
+		</ul>
+			</div>
+	  </nav>
 </nav>  
+	
+	<div class="jumbotron">
+		<h1 id="home" >  </h1>
+	<h1 class="display-4"   > World Press San Antonio </h1>
+	
 	  
-	  <hr class="my-4">
-	   
-<div class="container text-center">
+	   <div class="container text-sm-center pt 5">
+
+<div class="container">
+  
 <div class="p-3 mb-2 bg-danger text-white">
-	<p class="h1">  World Press San Antonio  </p> 
+	<p class="h1">  A One-day Conference About WordPress  </p> 
 	<p class="h2">  Coming Soon Next May </p>
 	
 	<div class="mt-5">
-  <button type="button" class="btn btn-secondary btn-lg" href ="C:\Users\David F Lopez Mendez\Desktop\Spring 2019\Web Design IMED-2315-001\Comming-Soon\default" >Register Now</button>
-		
-		
-		
-  <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
-		
-		
+  <button type="button" class="btn btn-secondary btn-lg"   
+data-toggle="modal" data-target="#exampleModal" >Register Now</button>
+ <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>		
 </div>
 	</div>
-	</div>
+	
 	</div>
 	</div>				
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -169,7 +168,7 @@ margin:#ccc;
  
 			
 		<div class="row"> 
-  <div class="column" style="background-color:#E6EC11;"  width: 175px    >
+  <div class="column" style="background-color:#E6EC11;"  width: 195px height="105"   >
     <h2 id="about" >Experts Speakers </h2>
      <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets</p> <p>Want to meet the international WordPress community and share skills with some of the world's top experts and makers? Be the first to know what to expect for the future of WordPress.
    <p>WordCamp is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p></p>
@@ -195,7 +194,7 @@ margin:#ccc;
   </div>
 
 		
-		</div>
+		
 		
 		
 	<h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
@@ -244,52 +243,60 @@ margin:#ccc;
 </div>
 </div>
 	
-	<h2 id="schedule"  class="display-4 text-center my-5 text-muted"  alt="Schedual Name"    > Schedule  </h2> 
+	<h2 id="schedule"    alt="Schedual Name"    > Schedule  </h2> 
 		
-		<div class="container pt-4">
-			<h3 class="mb-4"     >About WordCamp</h3>
+		
+			<h3 class="mb-10"     >About WordCamp</h3>
 <div class="row">
-	<ul class="list-group">
+	<div class="col-10">
+	
+	<ul>
 		
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Keynote:WorldPress 5.0-Speaker Name-
-    <span class="badge badge-primary badge-pill">9:00 am</span>
+  <li class="list-group-item d-flex justify-content-between ">
+    Keynote:WorldPress 5.0
+	  <p class="text-muted">Speaker Name</p>
+	  <span class="badge badge-primary badge-pill">9:00 am</span>
   </li>
 		
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    WooCommerce Basics-Speaker Name-
+    WooCommerce Basics<p class="text-muted">Speaker Name</p>
     <span class="badge badge-primary badge-pill">10:00 am</span>
   </li>
 		
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    WPEngine and Flywheel-Speaker Name-
+    WPEngine and Flywheel<p class="text-muted">Speaker Name</p>
     <span class="badge badge-primary badge-pill">11:00 am</span>
   </li>
 	
 		<li class="list-group-item d-flex justify-content-between align-items-center">
-    Lunch-Free pizza for everyone-
+			Lunch<p class="text-muted">Free pizza for everyone!</p>
     <span class="badge badge-primary badge-pill">12:00 am</span>
   </li>
 		
 		<li class="list-group-item d-flex justify-content-between align-items-center">
-    Creating your Theme-Speaker Name-
+    Creating your Theme<p class="text-muted">Speaker Name</p>
     <span class="badge badge-primary badge-pill">1:00 am</span>
   </li>
 		<li class="list-group-item d-flex justify-content-between align-items-center">
-    Developing a Plugin-Speaker Name-
+    Developing a Plugin<p class="text-muted">Speaker Name</p>
     <span class="badge badge-primary badge-pill">2:00 am</span>
   </li>
 	
 	<li class="list-group-item d-flex justify-content-between align-items-center">
-   Creating great Content and Podcasts-Speaker Name-
+   Creating great Content and Podcasts<p class="text-muted">Speaker Name</p>
     <span class="badge badge-primary badge-pill">3:00 am</span>
   </li>	
 		
 </ul>
 	</div>
+	</div>
 			<hr>
 		<center>
-			<button type="button" class="btn btn-primary btn-lg"  href ="C:\Users\David F Lopez Mendez\Desktop\Spring 2019\Web Design IMED-2315-001\Comming-Soon\default"  >Don't Miss Out , Regirster Now  </button></center>
+			<button type="button" class="btn btn-primary btn-lg"  
+					
+					data-toggle="modal" data-target="#exampleModal"
+					
+					>Don't Miss Out , Regirster Now  </button></center>
 			<!-- Modal -->
 			
 			
@@ -297,7 +304,7 @@ margin:#ccc;
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h1 class="modal-title" id="exampleModalLabel">Register for World Camp</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -307,31 +314,31 @@ margin:#ccc;
 		  <div data-target="#register">
 			 </div>
 		  </div>
-		  <h1> Register for World Camp </h1>
+		  <h3> Basic Info </h3>
 	<hr>
 	
 	<form>
   <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationDefault01"> 	Name </label>
-      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
-    <div class="valid-feedback">
+    
+      <label for="recipient-name"> 	Name </label>
+      <input type="text" id="recipient-name" class="form-control" placeholder="Name">
+    </div>
         
-      </div>
-	  </div>
+  
+	  
     <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
     <div class="valid-feedback">
         
       </div>
-	  </div>
+	  
     <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
+    <label for="exampleFormControlSelect1">Job Roles:</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
+      <option>WorldPres Developer </option>
       <option>2</option>
       <option>3</option>
       <option>4</option>
@@ -343,11 +350,11 @@ margin:#ccc;
       </div>
 		
     <hr>
-		<h1> Which Topics Intrest You Most ?</h1>
+		<h3> Which Topics Intrest You Most ?</h3>
 		
 		<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
+  <label class="form-check-label"  for="defaultCheck1">
     WordPress Plugins
   </label>
 </div>
@@ -364,26 +371,20 @@ margin:#ccc;
   </label>
 </div>
 		<hr>
-		<h1> Paymanet Info</h1>
-		<div class="form-group">
+		<h3> Paymanet Info</h3>
+		<div class="form-group col-md-6">
       <label for="disabledTextInput">Card Number</label>
       <input type="text" id="disabledTextInput" class="form-control" placeholder="">
     </div>
-		<div class="form-group">
+		<div class="form-group col-md-4">
       <label for="disabledTextInput">CVV</label>
       <input type="text" id="disabledTextInput01" class="form-control" placeholder="">
     <div class="valid-feedback">
         
 		</div>
 	  </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationDefault04">State</label>
-      <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-    <div class="valid-feedback">
-        
-      </div>
-	  </div>
-    <div class="col-md-3 mb-3">
+    
+    <div class="form-group col-md-4">
       <label for="validationDefault05">Zip</label>
       <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
     <div class="valid-feedback">
@@ -392,18 +393,28 @@ margin:#ccc;
 	  </div>
 		
 		<div class="form-group">
-      <label for="disabledTextInput">Expiration Date</label>
-      <input type="text" id="disabledTextInput02" class="form-control" placeholder="1 - January">
-    <div class="valid-feedback">
-       
+			<div class="col-auto my-1"> Expiration Date</div>	
+     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" placeholder="">
+        <option selected>1 - January.</option>
+        <option value="feb">1 - Febuary</option>
+        <option value="mar">1 - March</option>
+		  <option value="apr">1 - April</option>
+		  <option value="may">1 - May</option>
+		 <option value="jun">1 - June</option>
+        <option value="jul">1 - Juliy</option>
+        <option value="aug">1 - Agust</option>
+		  <option value="sept">1 - September</option>
+		  <option value="oct">1 - Ooctober</option>
+		 <option value="nov">1 - November</option>
+        <option value="dec">1 - Dicember</option>
+        
+				</select>
 		</div>
-	  </div>
-   <div class="form-row align-items-center">
-    <div class="col-auto my-1">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Year</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="2019">2019</option>
+	  
+   <div class="form-group col-md-4">
+	   <div class="col-auto my-1">Year</div>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect02">
+		  <option selected>2019</option>
         <option value="2020">2020</option>
         <option value="2021">2021</option>
 		  <option value="2022">2022</option>
@@ -412,7 +423,7 @@ margin:#ccc;
       </select>
     </div>
         
-		</div>
+		
 	 
   <div class="form-group">
     <div class="form-check">
@@ -422,16 +433,20 @@ margin:#ccc;
       </label>
     </div>
   </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
+ 
 </form>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Register</button>
       </div>
-    </div>
+		
+		  
+		     </div>
   </div>
 </div>
+    
+ 
 	</div>
 	
 		<footer class="footer-distributed">
@@ -491,8 +506,8 @@ margin:#ccc;
   </div>
 			
 			
-			
 		</footer>
-	</div>	
+		
+			</div>
 </body>
 </html>
