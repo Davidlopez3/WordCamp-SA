@@ -1,1 +1,22 @@
+/*variables*/
 
+$font-stack:    Helvetica, sans-serif
+$primary-color: #353535
+
+/*body*/
+body
+	font: 100% $font-stack
+	color: $primary-color
+/*heading*/
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', serif;
+}
+/*Jumbotron*/
+jumbotron{
+	min-height: 100%
+	min-height:100vh;
+	display flex: 
+	align-items: center;
+	background-color: transparent;
+
+}
