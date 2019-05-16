@@ -1,2 +1,62 @@
+/*variables*/
+
+$font-stack:    Helvetica, sans-serif
+$primary-color: #353535
+
+/*body*/
+body
+	font: 100% $font-stack
+	color: $primary-color
+/*heading*/
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', serif;
+}
+/*nav-bar*/
+.navbar{
+	&.navbar-light{
+		.navbar-nav{
+			.nav-link{
+				color: $wc-color-blue;
+				&.active{
+					color: $wc-color-red;
+				}
+			}
+		}
+	}
+}
+
+/*Jumbotron*/
+jumbotron{
+	min-height: 100%
+	min-height:100vh;
+	display flex: 
+	align-items: center;
+	background-color: transparent;
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: 
+	background-size: auto;
+	z-index: 0;
+	margin-bottom: 5rem;
+	.container{
+		z-index: 
+		color : white;
+	}
+		h1 {
+			font-weight: 800: 
+			font-size:10rem;
+			line-height: 10rem;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+
+		}
+	}&after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 
+	}
+
+
 
 
